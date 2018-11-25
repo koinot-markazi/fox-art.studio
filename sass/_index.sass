@@ -1,0 +1,97 @@
+.index
+	&-container-left
+		&-fullwidth
+			width: 100%
+			display: flex
+			justify-content: space-around
+			img
+				width: 70%
+
+		&-about
+			margin-top: 20px
+			&-p
+				color: $white
+		.start-project
+			&-a
+				color: $accent
+				font-size: 1.6em
+				line-height: 1
+				position: relative
+				top: 20px
+				transition: 0.2s 0.2s ease
+			.bg-circle
+				position: absolute
+				width: 0px
+				height: 0px
+				background-color: $accent
+				border-radius: 100px
+				z-index: -1
+				bottom: -30px
+				transition: 0.2s 0.2s ease
+			.make-appointment
+				float: right
+				color: $white
+				font-weight: bold
+				text-decoration: none
+				.location-icon
+					margin-right: 5px
+				span
+					color: $accent
+	&-container-right
+		margin-top: 30px
+		&-h2
+			color: $white
+		&-projects
+			&-project
+				width: 150px
+				height: 150px
+				background-color: $white
+				border: 1px solid rgba($gray, .4)
+				&:hover .index-container-right-projects-project-link svg path
+					fill: $white
+				&:hover .index-container-right-projects-project-opacity
+					opacity: 1
+				&:hover .index-container-right-projects-project-title
+					color: $accent
+					text-decoration: none
+				&-opacity
+					width: 150px
+					height: 150px
+					background-color: $gray
+					opacity: .5
+					position: absolute
+					z-index: 0
+					transition: 0.2s 0.2s ease
+				// border: 1px solid red
+				&-link
+					position: relative
+					z-index: 1
+					float: right
+					margin: 5px 10px
+					svg
+						path
+							transition: 0.2s 0.2s ease
+				&-title
+					position: relative
+					z-index: 1
+					float: left
+					margin-top: 30%
+					margin-left: 10px
+					font-weight: bold
+					color: $gray
+					transition: 0.2s 0.2s ease
+		.seemore
+			float: right
+			margin-right: 80px
+			margin-top: 20px
+			color: white
+			font-weight: bold
+			&:hover .arrow
+				width: 70px
+			.arrow
+				position: absolute
+				height: 2px
+				width: 0px
+				background-color: $white
+				transition: 0.2s 0.2s ease
+
