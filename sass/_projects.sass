@@ -10,6 +10,9 @@
 				&-title
 					color: $accent
 					font-weight: bold
+				&-detail
+					color: $gray
+					font-weight: bold
 		.projects-block
 			background-size: cover
 			background-position: center
@@ -21,10 +24,52 @@
 				height: 100%
 				background-color: rgba(#000, .4)
 				&-title
+					width: 100%
 					color: $white
 					margin-top: 50px
 					&:hover
 						text-decoration: none
+				&-detail
+					color: $white
+					width: 50%
+					height: 80px
+					overflow: hidden
+					display: -webkit-box
+					-webkit-line-clamp: 3
+					-webkit-box-orient: vertical
+				&-stat
+					position: absolute
+					right: 0
+					width: 50%
+					height: 100%
+					&-icons
+						width: 33.3%
+						background-color: rgba($black, .5)
+						height: 100%
+						text-align: center
+						color: $white
+						font-size: 3em
+						font-weight: bold
+						line-height: 1
+						padding: 10px 0
+						float: left
+						&:nth-child(2)
+							background-color: rgba($black, .7)
+						&:nth-child(3)
+							background-color: rgba($black, .8)
+						&-icon
+							height: 30px
+							margin-top: 20px
+						&-title
+							height: 70%
+							margin-top: 40px
+							text-align: center
+							line-height: 0.5
+							font-weight: bold
+							span
+								font-size: 14px
+								font-weight: regular
+
 		&-description
 			margin-top: 20px
 			&-back
@@ -43,3 +88,21 @@
 					text-decoration: none
 				svg
 					margin-left: 5px
+			&-assets
+				.assets
+					color: $white
+				&-block
+					display: flex
+					justify-content: space-between
+					flex-wrap: wrap
+					&-asset
+						float: left
+						background-color: $accent
+						width: 150px
+						height: 150px
+						color: $white
+						display: flex
+						justify-content: space-around
+						margin-bottom: 30px
+						&:hover
+							background-color: darken($accent, 15%)

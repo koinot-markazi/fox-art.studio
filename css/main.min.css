@@ -2853,6 +2853,7 @@ strong {
 
 .index-container-left-about-p {
   color: #FFFFFF;
+  text-align: justify;
 }
 
 .index-container-left .start-project-a {
@@ -3001,6 +3002,11 @@ strong {
   font-weight: bold;
 }
 
+.projects .projects-link:hover .projects-block-info-detail {
+  color: #231F20;
+  font-weight: bold;
+}
+
 .projects .projects-link .projects-block {
   -webkit-background-size: cover;
           background-size: cover;
@@ -3017,12 +3023,69 @@ strong {
 }
 
 .projects .projects-link .projects-block-info-title {
+  width: 100%;
   color: #FFFFFF;
   margin-top: 50px;
 }
 
 .projects .projects-link .projects-block-info-title:hover {
   text-decoration: none;
+}
+
+.projects .projects-link .projects-block-info-detail {
+  color: #FFFFFF;
+  width: 50%;
+  height: 80px;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+
+.projects .projects-link .projects-block-info-stat {
+  position: absolute;
+  right: 0;
+  width: 50%;
+  height: 100%;
+}
+
+.projects .projects-link .projects-block-info-stat-icons {
+  width: 33.3%;
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 100%;
+  text-align: center;
+  color: #FFFFFF;
+  font-size: 3em;
+  font-weight: bold;
+  line-height: 1;
+  padding: 10px 0;
+  float: left;
+}
+
+.projects .projects-link .projects-block-info-stat-icons:nth-child(2) {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.projects .projects-link .projects-block-info-stat-icons:nth-child(3) {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.projects .projects-link .projects-block-info-stat-icons-icon {
+  height: 30px;
+  margin-top: 20px;
+}
+
+.projects .projects-link .projects-block-info-stat-icons-title {
+  height: 70%;
+  margin-top: 40px;
+  text-align: center;
+  line-height: 0.5;
+  font-weight: bold;
+}
+
+.projects .projects-link .projects-block-info-stat-icons-title span {
+  font-size: 14px;
+  font-weight: regular;
 }
 
 .projects .projects-link-description {
@@ -3053,6 +3116,153 @@ strong {
 
 .projects .projects-link-description-linkto svg {
   margin-left: 5px;
+}
+
+.projects .projects-link-description-assets .assets {
+  color: #FFFFFF;
+}
+
+.projects .projects-link-description-assets-block {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+}
+
+.projects .projects-link-description-assets-block-asset {
+  float: left;
+  background-color: #FF522A;
+  width: 150px;
+  height: 150px;
+  color: #FFFFFF;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+  margin-bottom: 30px;
+}
+
+.projects .projects-link-description-assets-block-asset:hover {
+  background-color: #dd2900;
+}
+
+.login .workspace, .projects .workspace {
+  margin-bottom: 30px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+}
+
+.login .workspace-logo, .projects .workspace-logo {
+  margin-top: 20px;
+}
+
+.login .workspace-logo img, .projects .workspace-logo img {
+  width: 150px;
+}
+
+.login-workspace, .projects-workspace {
+  margin-top: 20vh;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+  width: 100%;
+}
+
+.login-workspace-form-input, .projects-workspace-form-input {
+  border-bottom: 1px solid #FFFFFF;
+  width: 300px;
+  margin: 5px 0;
+}
+
+.login-workspace-form-input input, .projects-workspace-form-input input {
+  background-color: transparent;
+  border: none;
+  color: #FFFFFF;
+}
+
+.login-workspace-form-submit, .projects-workspace-form-submit {
+  margin-top: 20px;
+}
+
+.login-workspace-form-submit input, .projects-workspace-form-submit input {
+  background-color: #FF522A;
+  padding: 10px 30px;
+  float: right;
+  border: none;
+  -webkit-border-radius: 30px;
+          border-radius: 30px;
+  font-weight: bold;
+  color: #FFFFFF;
+}
+
+.githublink {
+  margin-top: 60px;
+  border-bottom: 1px solid #FFFFFF;
+  background-color: #231F20;
+}
+
+.githublink .githubinput {
+  background-color: transparent;
+  border: none;
+  width: 100%;
+  color: #FFFFFF;
+  -webkit-transition: 0.2s 0.2s ease;
+  -o-transition: 0.2s 0.2s ease;
+  transition: 0.2s 0.2s ease;
+}
+
+.githublink .githubinput:focus::-webkit-input-placeholder {
+  color: #231F20;
+}
+
+.labelText {
+  color: #FFFFFF;
+  position: relative;
+  z-index: -2;
+  bottom: 30px;
+}
+
+.alert {
+  color: gray;
+  position: relative;
+  top: 10px;
+}
+
+.logout {
+  position: absolute;
+  right: 15px;
+  top: 50px;
+  background-color: #FF522A;
+  padding: 5px 20px;
+  -webkit-border-radius: 3px;
+          border-radius: 3px;
+  color: #FFFFFF;
+  font-weight: bold;
+}
+
+.logout:hover {
+  text-decoration: none;
+  color: #FFFFFF;
+  background-color: #dd2900;
 }
 
 /*==========  Desktop First  ==========*/
